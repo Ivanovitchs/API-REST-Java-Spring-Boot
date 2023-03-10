@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
+
 @AllArgsConstructor
 @Entity
 @Table(name = "information")
@@ -34,7 +34,7 @@ public class Information {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	public Information() {
-		
+		super();
 	}
 
 	public Information(long id,String nommachine,String nommuser, String adresseip, String typeantivirus, String statusmachine) {
